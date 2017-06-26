@@ -1,0 +1,400 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{hyperref}
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{-0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{.3in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{shading}
+%\textheight=9.0in
+%\pagestyle{empty}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\chead{{\it Curriculum Vitae -- Camille Avestruz}}
+\rhead{\thepage}
+\cfoot{}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item[] #1\vspace{-7pt}}
+%%%
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}\vspace{-10pt}}
+%%%
+\newcommand{\ressubheading}[4]{
+  \begin{tabular*}{7.05in}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    % \textit{#3} & \textit{#4} \\
+    #3 & \textit{#4} 
+  \end{tabular*}\vspace{-0pt}}
+%%%
+%%%
+\newcommand{\profappointments}[8]{
+  \begin{tabular*}{7.05in}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    #3 & \textit{#4} \\
+    #5 & \textit{#6} \\
+    #7 & \textit{#8} \\
+  \end{tabular*}\vspace{-0pt}}
+%%%
+\newcommand{\publications}[4]{
+% \item[]
+   \begin{itemize}
+     % \item[#1] \textbf{#2}\\
+     %   #3\\
+     %   #4
+     \item[#1] #3, {\it #2}\\
+       #4
+     \end{itemize}\vspace{3pt}
+}
+%%%
+\newcommand{\activities}[3]{
+  \begin{tabular*}{7.05in}{l@{\extracolsep{\fill}}r}
+    #1&#2\vspace{-15pt}
+    \end{tabular*}
+    \begin{itemize}
+      \item[] {\it #3}\vspace{-5pt}
+      \end{itemize}
+}
+%%%
+\newcommand{\activitiesbf}[2]{
+  \begin{tabular*}{7.05in}{l@{\extracolsep{\fill}}r}
+    {\bf #1}&#2
+    \end{tabular*}\vspace{-10pt}
+}
+%%%
+\newcommand{\activitiesshort}[3]{
+  \begin{tabular*}{6.65in}{l@{\extracolsep{\fill}}r}
+    #1&#2\vspace{-5pt}
+    \end{tabular*}
+    \begin{itemize}
+      \item[] {\it #3}
+      \end{itemize}
+}
+
+%-----------------------------------------------------------
+
+
+\begin{document}
+\thispagestyle{empty}
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Camille Avestruz}  & (917) 543-4623\\
+Kavli Institute of Cosmological Physics, University of Chicago&  avestruz(at)uchicago.edu \\
+ERC 411, 5640 South Ellis Ave.& \\
+Chicago, IL 60637& \\
+\end{tabular*}
+\\
+
+\vspace{0in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+% \begin{itemize}
+% \item[]
+	\ressubheading{Yale University}{New Haven,
+          CT}{Ph.D. Physics}{2012-2015}\vspace{-5pt}
+	\begin{itemize}
+		\resitem{\textit{Cosmological Simulations of Galaxy
+                    Cluster Outskirts}}
+		\resitem{Advisor: Daisuke Nagai}\vspace{3pt}
+	\end{itemize}
+%\item[]
+	\ressubheading{Yale University}{New Haven,
+          CT}{M.Sc., M.Phil. Physics}{2012}
+%\item[]
+	\ressubheading{Barnard College}{New York, NY}{B.A. Physics,
+          Mathematics, Dance, \textit{cum
+            laude}}{2005-2009}
+\vspace{-5pt}
+%\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Professional Appointments}
+% \begin{itemize}
+% \item[]
+	\profappointments{University of Chicago}{Chicago, IL}
+                         {Kavli Institute for Cosmological Physics Postdoctoral Fellow}{2015-present}
+                         {University Provost's Postdoctoral Scholar}{2015-present}
+                         {Enrico Fermi Institute Fellow}{2015-present}
+\vspace{-5pt}
+%\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Research Interests} 
+
+During my PhD, I studied how baryonic processes in galaxy clusters,
+such as feedback from active galactic nuclei and non-equilibrium
+electrons, affect observations in the X-ray and microwave. I have
+recently transitioned to developing the use of machine learning
+algorithms in application to upcoming large survey datasets, such as
+LSST and Euclid.  In particular, I am building an automated pipeline
+to identify strong lensing systems.
+
+{\bf Areas:} Galaxies, galaxy clusters, large-scale structure,
+cosmological simulations, hydrodynamic simulations, high-energy
+astrophysics, X-ray observations, Sunyaev-Zeldovich effect, strong
+lensing, machine learning, galaxy formation \& evolution.
+
+{\bf Technical Skills:} High Performance Computing, Parallel
+Computing; Programming Languages: Python, C, OpenMP/MPI; Astrophysics
+Software: developer for and user of Adaptive Refinement Tree code
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Publications}
+\begin{itemize}\itemsep0pt \parskip0pt \parsep0pt
+\item[] \publications{6.}{Stirred, not Clumped: Evolution of Temperature Profiles in the Outskirts of Galaxy Clusters}{\textbf{C.~Avestruz},
+    D.~Nagai, E.~Lau}{2016, ApJ, 833, 227}
+\item[] \publications{5.}{Non-Equilibrium Electrons in Galaxy Cluster Ouskirts}{\textbf{C.~Avestruz},
+    D.~Nagai, E.~Lau, K.~Nelson}{2015, ApJ, 808, 176}
+\item[] \publications{4.}{Mass Accretion and its Effects on the
+    Self-Similarity of Gas Profiles in the Outskirts of Galaxy
+    Clusters}{E.~Lau, D.~Nagai, \textbf{C.~Avestruz}, K.~Nelson,
+    A.~Vikhlinin }{2015, ApJ, 806, 68}
+\item[] \publications{3.}{Testing X-ray Measurements of Galaxy Cluster
+    Outskirts with Cosmological Simulations}{\textbf{C.~Avestruz},
+    E.~Lau, D.~Nagai, A.~Vikhlinin}{2014, ApJ, 791, 117}
+\item[] \publications{2.}{Temperature Structure of the Intracluster
+    Medium from Smoothed-particle Hydrodynamics and Adaptive-mesh
+    Refinement Simulations}{E.~Rasia, E.~Lau, S.~Borgani, D.~Nagai,
+    K.~Dolag, \textbf{C.~Avestruz}, G.~Granato, P.~Mazzotta,
+    G.~Murante, K.~Nelson, C.~Ragone-Figueroa}{2014, ApJ, 791, 96}
+\item[] \publications{1.}{Predicting Merger-Induced Gas Motions in
+          Lambda-CDM Galaxy Clusters}{D.~Nagai, E.~Lau,
+          \textbf{C.~Avestruz}, K.~Nelson, D.~Rudd}{2013, ApJ, 777,
+          137}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Publications in Preparation} 
+\begin{itemize}\itemsep0pt \parskip0pt \parsep0pt
+\item[] \publications{2.}{Self-similarity of the Intracluster Medium
+  and the Evolution of Cluster Scaling Relations
+}{\textbf{C.~Avestruz}, et al.}{ApJ, in prep}
+\item[] \publications{1.}{Automated Lensing Learner (ALL): A Strong
+  Lensing Identification Pipeline}{\textbf{C.~Avestruz}, N.~Li,
+  M.~Lightman, et al.}{ApJ, in prep}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Awards/Grants} 
+
+\activities{American Astronomical Society Rodger Doxsey Dissertation
+  Prize (Honorable Mention)}{2015}{To present dissertation research at
+  the 225th AAS Meeting: ``Modeling Galaxy Cluster Outskirts with
+  Cosmological Simulations''}
+
+\activities{National Science Foundation Graduate Fellowship
+  (\$132,000)}{2010-2015}{Awarded Proposal for Modeling Feedback from
+  Active Galactic Nuclei}
+
+\activities{D. Allan Bromley Graduate Fellowship in Physics, Yale
+  University (\$5,000)}{2013}{Department Graduate Prize Fellowship --
+  For a commitment to outreach, diversity, and teaching, thereby
+  demonstrating a broader impact on the university}
+
+\activities{Social Science Research Council Graduate Studies
+  Enhancement Grant (\$5,000)}{2010-2013}{\vspace{-20pt}}
+
+\activities{AAS Beth Brown Memorial Award}{2011}{Best Poster Award at
+  the 2011 NSBP/NSHP Meeting, Austin, TX}
+
+\activities{Paul K. and Evalyn Elizabeth Cook Richter Summer
+  Fellowship (\$1,000)}{2011}{University Grant -- For summer
+  research and travel to 2011 Santa Fe Cosmology Workshop}
+
+\activities{John Sloane Fellowship in Physics, Yale
+  University}{2009-2011}{Academic Based Award for Incoming Graduate Students}
+
+\activities{Henry A. Boorse Prize in Physics, Barnard
+  College}{2009}{To the graduating student whose record in physics
+  shows promise of distinction in a scientific career}
+
+\activities{Margaret Kenny Jensen Prize in Mathematics, Barnard
+  College}{2008}{For excellence in mathematics: the highest
+  score on the annual Mathematics Prize Exam}
+
+\activities{Howard Hughes Science Research Internship Award, Columbia
+  University}{2008}{Summer research grant to characterize the Outer
+  Muon Detector of the Double Chooz experiment}
+
+\activities{Jewish Foundation for the Education of Women
+  (\$1,500)}{2007}{Summer research grant to design shutter hardware
+  for LIGO, Adviser: Szabolcs Marka}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Professional Societies}
+
+\activities{Edward A. Bouchet Graduate Honor Society, Yale
+  University}{2013-present}{National academic society recognizing
+  scholarship, leadership, character, service, and advocacy.}
+\activities{Society for the Advancement of Hispanics/Chicanos and
+  Native Americans in Science}{Lifetime member}{\vspace{-20pt}}
+%\activities{National Society of Hispanic Physicists}{2011-present}{\vspace{-20pt}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Teaching, Advising, and Outreach}
+
+\begin{description}\itemsep0pt \parskip0pt \parsep0pt
+\item[University Teaching:]
+
+\activitiesshort{ASTR 45500, Machine Learning in Astronomy (Instructor on Record)}{Spring 2017}{\vspace{-20pt}}
+  
+\activitiesshort{Phys 181, University Physics - Electricity, Magnetism and
+  Optics}{Spring 2011}{\vspace{-20pt}}
+  
+\activitiesshort{Phys 420, Statistical Thermodynamics}{Fall 2010}{\vspace{-20pt}}
+
+\activitiesshort{Phys 343, Gravity, Astrophysics, and Cosmology}{Spring
+  2010}{\vspace{-20pt}}
+
+\activitiesshort{Phys 165, General Physics Laboratory - Mechanics}{Fall
+  2009}{\vspace{-20pt}}%Introductory lab: taught short lectures, assisted student
+% experiments}
+
+\item[Advising:] \activitiesshort{Hanjue Zhu, University of Chicago
+  Undergraduate}{Spring 2017-present}{Research: Exploring deep learning
+  applications to strong lensing systems}
+
+
+  \activitiesshort{Huanqing Chen, University of Chicago PhD
+    Student}{Fall 2016-present}{Research: Analyzing mock X-ray
+    surveyor/Lynx images of accretion generated shocks in the
+    intracluster medium}
+
+  \activitiesshort{Nora Shipp, University of Chicago PhD
+    Student}{Spring 2016}{Research: Developed code to calculate
+    subhalo orbits in a Self-Interacting Dark Matter potential}
+
+  \activitiesshort{Wonyong Chung, Yale Undergraduate}{Spring 2013}{Research: Developed
+    python pipeline to characterize the AGN population in simulations}
+  
+  \activitiesshort{Nick Aldana, Yale Undergraduate}{Fall
+    2011}{Research: Developed automated scripting for visualizations
+    of simulated galaxy clusters}
+
+\item[Outreach and Education:] 
+
+  \activitiesshort{AstroCom NYC -- Summer Instructor in
+    Computation}{2015, 2016}{Four-day intensive computational
+    preparation for summer undergraduate astronomy research}
+
+  \activitiesshort{Software Carpentry --
+    Instructor}{2013-present}{Two-day software bootcamps for scientists
+    and engineers covering bash, Git/Github, Python}
+
+  \activitiesshort{Yerkes Summer Institute --
+    Instructor}{2016}{Week-long hands on labs for high school
+    students in Yerkes Observatory}
+
+  \activitiesshort{Girls' Science Investigations --
+    Instructor}{2009-2012}{Experiments and demonstrations four
+    Saturday mornings a year for girls in grades 6-8}
+
+  \activitiesshort{Let's Get Ready -- SAT Math
+    Instructor}{2007}{Taught Mathematics SAT preparation for
+    low-income New York City high school students}
+
+  \activitiesshort{Oliver Scholars Summer Immersion Program -- Math
+    Instructor}{2005}{Taught a geometry course to rising NYC Oliver
+    Scholars transitioning to private high schools}
+
+\item[Mentorship and Service:]
+
+  \activitiesshort{Women in Science at Yale --
+    Mentor}{2010-2015}{Mentored 3 undergraduate women in STEM fields}
+
+  \activitiesshort{Mellon Mays Undergraduate Fellowship --
+    Mentor}{2011, 2012}{Mentored undergraduate fellows during two
+    summer colloquia at Barnard College}
+  
+\end{description}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Selected Conference Presentations}%/Conferences/Workshops}
+
+\activities{\bf Cosmology on Safari -- KwaZulu-Natal, South Africa}{Talk, 2/2017}
+           {Automated Lensing Learner (ALL): Identifying Strong Lensing Systems}
+\activities{\bf Fellows at the Frontiers -- Evanston, IL}{Invited Talk, 9/2016}
+           {Stirred, not Clumped: Temperature Profile Evolution}
+\activities{\bf Physics of the Intracluster Medium -- Minneapolis, MN}{Poster, 8/2016}
+           {Stirred, not Clumped: Temperature Profile Evolution}
+\activities{\bf European Week of Astronomy and Space Science -- Athens, Greece}{Talk, 7/2016}
+           {Evolution of Temperature Profiles in the Outskirts of Galaxy Clusters}
+\activities{\bf ICM Physics and Modeling -- Garching, Germany}{Talk, 6/2015}
+           {Modeling Ultra-Deep Chandra Observations of A133}
+\activities{\bf American Astronomical Society Meeting \#225}{Talk, 1/2015}
+           {Model Galaxy Cluster Outskirts with Cosmological Simulations}
+\activities{\bf Cosmology with Galaxy Clusters in the XXI Century --
+  Madrid, Spain}{Talk, 11/2014}{Cosmological Simulations of Galaxy
+  Cluster Outskirts}
+\activities{\bf Santa Fe Cosmology Workshop}{Talk, 7/2014}{Testing
+  X-ray Measurements of Galaxy Cluster Outskirts with Cosmological
+  Simulations}
+\activities{\bf Jerusalem Winter School on Galaxy Formation}{Talk, 1/2013}{The Effects of AGN and Supernovae on the Star
+            formation history of Galaxy Clusters}
+\activities{\bf American Astronomical Society Meeting
+          \#220}{Talk, 5/2012}{The Effects of AGN on X-ray and SZ Clusters}
+\activities{\bf Meeting of the National Societies
+        of Black and Hispanic Physicists}{Poster, 9/2011}{Awarded the \underline{AAS Beth Brown Memorial Best Poster
+            Prize} }
+\activities{\bf American Astronomical Society Meeting
+          \#218}{Poster, 5/2011}{Modeling AGN Feedback in Cosmological Simulations}
+
+\resheading{Seminar Presentations}%/Conferences/Workshops}
+
+\activitiesbf{U of Michigan -- Extreme Astrophysics Seminar}{11/16/16}
+
+\activitiesbf{Fermilab -- Seminar}{6/27/16}
+ 
+\activitiesbf{U of Chicago -- KICP Seminar}{3/4/16}
+ 
+\activitiesbf{U of Chicago -- Chalk Talk}{2/23/16}
+ 
+\activitiesbf{Harvard ITC Seminar}{12/2/14}
+ 
+\activitiesbf{Berkeley Cosmology Seminar Series}{11/25/14}
+
+\activitiesbf{Columbia Astronomy Seminar}{10/30/14}
+
+\activitiesbf{Princeton Cosmology Luncheon}{10/27/14}
+ 
+\activitiesbf{Caltech TAPIR Seminar}{10/24/14}
+
+\activitiesbf{Stanford Cosmology Seminar}{10/19/14}
+
+\activitiesbf{ETH Zurich -- Seminar}{9/3/14}
+
+\activitiesbf{MPA Garching -- Seminar}{9/2/14}
+
+\activitiesbf{MPIA Heidelberg -- Seminar}{9/1/14}
+% 
+% 	\activitiesbf{Boston University Tuesday Lunch Talk}{9/23/14}
+
+\activitiesbf{Yale Graduate Series Lunch Talk}{4/16/14}
+
+\activitiesbf{Yonsei University -- Seminar}{3/18/14}
+
+\activitiesbf{Korean Institute of Advanced Study -- Seminar}{3/16/14}
+
+\activitiesbf{Washington University in St. Louis -- Seminar}{9/28/12}
+
+
+
+\end{document}
